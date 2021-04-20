@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BAJULAKU.COM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.cart {
+  width: 20px;
+  position: absolute;
+  top: 30px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+ <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+</head>
+<link rel="stylesheet" href="stylesheet.css">
+<body>
+
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>BAJULAKU</em> .COM</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Daftar Produk</a></li>
+        
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="formulir.html">Formulir</a></li>
+        <li><a href="about.html" class="external">About Us</a><img class="cart" src="cart.png" alt=""></li>
+        
+         <li class="has-submenu"><a href="#section2">More Page</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Login</a></li>
+            <li><a href="#section3">Register</a></li>
+            <li><a href="#section3">Wishlist</a></li>
+            <li><a href="#section3">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Biodata Diri Dari Pendiri BAJULAKU.COM dan Para Jajarannya.</p>
+  <p>Awal mula Beridirinya Page Fashion Nomor 1 Di Dunia.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/hendri.jpeg" alt="hendri" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Orang Yang paling Berjasa Dan Sebagai Pendiri BAJULAKU.COM.</p>
+        <p>hendriansyah113@gamil.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="img/mozza.jpeg" alt="Mozza" style="width: 410px;">
+      <div class="container">
+        <h2>Mozza</h2>
+        <p class="title">Desainer & Istri</p>
+        <p>Penanggung Jawab Desain Dan Sekaligus Istri Saya (aamiin).</p>
+        <p>Mozzalovelove113@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="img/gani.jpg" alt="Gani" style="width:315px">
+      <div class="container">
+        <h2>M. Abdul Gani</h2>
+        <p class="title">Penghulu</p>
+        <p>Penghulu Saat Pernikahan Saya Dan Mozza.</p>
+        <p>Ganikerenzzzabieezz@yahoo.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>Bajulaku <span>.com</span></h3>
+
+        <p class="footer-links">
+          <a href="#">Beranda</a>
+          ·
+          <a href="#">Tentang kami</a>
+          ·
+          <a href="#">Faq</a>
+          ·
+          <a href="#">Kontak</a>
+        </p>
+
+        <p class="footer-company-name">Hendrikaruga © 2021</p>
+        <br>
+
+        <div id="socialiconsbox">
+          <a class="facebook socialicons" href="#" title="Facebook " target="_blank">f</a>
+          <a class="twitter socialicons" href="#" title="Twitter " target="_blank">t</a>
+          <a class="youtube socialicons" href="#" title="youtube " target="_blank">yt</a>
+          <a class="googleplus socialicons" href="#" title="Google+" target="_blank">g+</a>
+          <a class="linkedin socialicons" href="#" title="Linkedin" target="_blank">in</a>
+          <a class="github socialicons" href="#" title="github" target="_blank">git</a>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p>Kontak Kami</p>
+
+        <form action="#">
+
+          <input type="text" name="email" placeholder="Email">
+          <textarea name="message" placeholder="Pesan"></textarea>
+          <button>Kirim</button>
+
+        </form>
+
+      </div>
+
+    </footer>
+  </body>
+</html>
+
+</body>
+</html>

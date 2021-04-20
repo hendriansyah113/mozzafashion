@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BAJULAKU.COM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.cart {
+  width: 20px;
+  position: absolute;
+  top: 30px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  float: right;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+h4 {
+  position: relative;
+  top: 200px;
+  float: right;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h4 {
+  position: relative;
+  right: 100px;
+  top: 240px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+ <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+</head>
+<link rel="stylesheet" href="stylesheet.css">
+<body>
+
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>BAJULAKU</em> .COM</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Daftar Produk</a></li>
+        
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="formulir.html">Formulir</a></li>
+        <li><a href="about.html" class="external">About Us</a><img class="cart" src="cart.png" alt=""></li>
+        
+         <li class="has-submenu"><a href="#section2">More Page</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Login</a></li>
+            <li><a href="#section3">Register</a></li>
+            <li><a href="#section3">Wishlist</a></li>
+            <li><a href="#section3">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="about-section">
+  <h1>Formulir Page</h1>
+  <p>Formulir Pendaftaran Untuk Member</p>
+  <p>Dapatkan Berbagai Bonus Saat Menjadi Member.</p>
+</div>
+  <h4>Nama : Hendriansyah
+    <p>NIM : 19.53.021246</p>
+  </h4>
+  <h3 style="color:white">NIM : 19.53.021246</h3>
+<h2 style="text-align:center">Pendaftaran</h2>
+
+
+<div class="container">
+  <a href="img/hendri.jpeg">
+  <img src="img/hendri.jpeg" alt="Paris">
+</a>
+  <form action="/action_page.php">
+  <div class="row">
+   <label for="fname">Isilah Seluruh Kolom Registrasi Dengan Sebenar-benarnya</label>
+   <br>
+   <br>
+   <br>
+   <br>
+    <div class="col-25">
+      <label for="fname">Nama&nbsp;&nbsp;:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Masukan Nama Anda">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Username :</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Masukan Username">
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-25">
+      <label for="lname">Password :</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Password">
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-25">
+      <label for="lname">E-mail :</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Masukan Email">
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-25">
+      <label for="lname">Jenis Kelamin:</label>
+    </div>
+    <div class="col-75">
+      <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Pria</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Perempuan</label><br>
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-25">
+      <label for="lname">Olahraga :</label>
+    </div>
+    <div class="col-75">
+     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> Basket</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Sepak Bola</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> Catur</label><br><br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Tanggal Lahir:</label>
+    </div>
+    <div class="col-75">
+      <input type="date" id="lname" name="lastname" placeholder="Masukan Email">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Negara :</label>
+    </div>
+    <div class="col-75">
+       <input type="text" id="lname" name="lastname" placeholder="Negara Tempat Tinggal">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Kota :</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="australia">Aceh</option>
+        <option value="canada">Palangkaraya</option>
+        <option value="usa">Cibitung</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Biografi : </label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Isilah Biografi Singkat Anda" style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Simpan">
+  </div>
+  </form>
+</div>
+<br>
+
+ <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>Bajulaku <span>.com</span></h3>
+
+        <p class="footer-links">
+          <a href="#">Beranda</a>
+          ·
+          <a href="#">Tentang kami</a>
+          ·
+          <a href="#">Faq</a>
+          ·
+          <a href="#">Kontak</a>
+        </p>
+
+        <p class="footer-company-name">Hendrikaruga © 2021</p>
+        <br>
+
+        <div id="socialiconsbox">
+          <a class="facebook socialicons" href="#" title="Facebook " target="_blank">f</a>
+          <a class="twitter socialicons" href="#" title="Twitter " target="_blank">t</a>
+          <a class="youtube socialicons" href="#" title="youtube " target="_blank">yt</a>
+          <a class="googleplus socialicons" href="#" title="Google+" target="_blank">g+</a>
+          <a class="linkedin socialicons" href="#" title="Linkedin" target="_blank">in</a>
+          <a class="github socialicons" href="#" title="github" target="_blank">git</a>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p>Kontak Kami</p>
+
+        <form action="#">
+
+          <input type="text" name="email" placeholder="Email">
+          <textarea name="message" placeholder="Pesan"></textarea>
+          <button>Kirim</button>
+
+        </form>
+
+      </div>
+
+    </footer>
+  </body>
+</html>
+
+</body>
+</html>
